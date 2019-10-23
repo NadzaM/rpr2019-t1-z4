@@ -19,4 +19,21 @@ public class Artikl {
     public int getCijena() {
         return Cijena;
     }
+
+  /*  @Override
+    public int hashCode() {
+        return super.hashCode();
+    }*/
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj) return true;
+        if(obj == null || getClass() != obj.getClass()) return false;
+        Artikl artikl = (Artikl) obj;
+        return  Cijena == artikl.Cijena &&
+                NazivArtikla.equals(artikl.NazivArtikla) &&
+                Kod.equals(artikl.Kod);
+    }
+
 }
