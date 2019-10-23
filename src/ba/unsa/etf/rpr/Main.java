@@ -2,6 +2,7 @@ package ba.unsa.etf.rpr;
 
 import java.util.Scanner;
 
+
 public class Main {
 
     private static Korpa korpa = new Korpa();
@@ -32,7 +33,7 @@ public class Main {
 
     public static void ispisArtikala(Artikl[] artikli){
         for (Artikl a : artikli) {
-            if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
+            if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM"); //paziti kakav uslov se ovdje koristi
         }
     }
 
