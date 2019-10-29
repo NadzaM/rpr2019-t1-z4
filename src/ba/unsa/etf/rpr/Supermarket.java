@@ -16,15 +16,17 @@ public class Supermarket {
         return SviArtikli;
     }
     public  Artikl izbaciArtiklSaKodom (String Kod){
+        Artikl pomocni = null;
        int trenutni = 0;
         for(trenutni = 0; trenutni < BrojArtikala; trenutni++){
             if(SviArtikli[trenutni].getKod().equals(Kod)){
+                pomocni = SviArtikli[trenutni];
                 SviArtikli[trenutni] = new Artikl(SviArtikli[BrojArtikala-1].getNaziv(),SviArtikli[BrojArtikala-1].getCijena(),SviArtikli[BrojArtikala-1].getKod());
                 SviArtikli[BrojArtikala-1] = null;
                 BrojArtikala--;
             }
         }
-return SviArtikli[0];
+return pomocni;
     }
 
 

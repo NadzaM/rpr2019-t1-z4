@@ -1,4 +1,4 @@
-package ba.unsa.etf.rpr;
+/*package ba.unsa.etf.rpr;
 
 import org.junit.jupiter.api.Test;
 
@@ -25,4 +25,4 @@ class ArtiklTest {
         assertEquals(5, TestniArtikl.getCijena());
         System.out.println("Test 3 uspješan");
     }
-}
+}*/
